@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control light</title>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.10.0/firebase-firestore.js"></script>
+    <script src="script.js" defer></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="message">
+        <p class="message-temp"></p>
+        <br/>
+        <p class="message-humi"></p>
+        <p class="message-result"></p>
+    </div>
+    <h2>Control light Smarthome</h2>
+    <div class="container">
+        <div class="main">
+            <div class="control-light">
+                <div class="light light1">L1</div>
+            </div>
+            <div class="status1"></div>
+        </div>
+        <div class="main">
+            <div class="control-light">
+                <div class="light light2">L2</div>
+            </div>
+            <div class="status2"></div>
+        </div>
+        <div class="main">
+            <div class="control-light">
+                <div class="light door">Cửa</div>
+            </div>
+            <div class="status4"></div>
+        </div>
+        <div class="main">
+            <div class="control-light">
+                <div class="light light3">L3</div>
+            </div>
+            <div class="status"></div>
+        </div>
+        <div class="brightness-light">
+            <input type="range" min="1" max="255" value="1" class="slider" id="brightness">
+            <div class="status3"></div>
+        </div>
+        <div class="alert">
+            <div class="tempurature">
+                <h3>Nhiệt độ :</h2>
+                <p class="temp"></p>
+            </div>
+            <div class="humidity">
+                <h3>Độ ẩm :</h2>
+                <p class="humi"></p>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
